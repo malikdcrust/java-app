@@ -7,5 +7,10 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/malikdcrust/java-app.git'
             }
         }
+        stage('Example') {
+            steps {
+                echo 'Hello World'
+            }
+        }
     }
 }
