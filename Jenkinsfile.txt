@@ -19,7 +19,7 @@ pipeline {
         }
         stage('MAVEN BUILD') {
             steps {
-               sh 'mvn clean install'
+               sh 'mvn install'
             }
         }
         stage('sTATIC CODE ANALYSIS') {
